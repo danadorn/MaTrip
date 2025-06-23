@@ -1,59 +1,59 @@
 const card = [
-  {
-   image: "./assets/img/home-img-1.png",
-   title: "Angkor Wat, Siem Reap  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+  {image: './assets/img/home-img-1.png',
+   title: 'Angkor Wat, Siem Reap  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
+  },
+
+  {image: './assets/img/home-img-2.png',
+   title: 'Kirirom, Kampung Spue  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
   {
-   image: "./assets/img/home-img-2.png",
-   title: "Kirirom, Kampung Spue  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
-  },
-
-  {
-   image: "./assets/img/home-img-3.png",
-   title: "Seahorse, Kampot  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-3.png',
+   title: 'Seahorse, Kampot  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
     {
-   image: "./assets/img/home-img-4.png",
-   title: "Koh Rong, Sihaknukvill  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-4.png',
+   title: 'Koh Rong, Sihaknukvill  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
     {
-   image: "./assets/img/home-img-5.png",
-   title: "Angkor Wat, Siem Reap  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-1.png',
+   title: 'Angkor Wat, Siem Reap  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
     {
-   image: "./assets/img/home-img-6.png",
-   title: "Kirirom, Kampung Spue  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-2.png',
+   title: 'Kirirom, Kampung Spue  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
     {
-   image: "./assets/img/home-img-7.png",
-   title: "Seahorse, Kampot  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-3.png',
+   title: 'Seahorse, Kampot  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
     {
-   image: "./assets/img/home-img-8.png",
-   title: "Koh Rong, Sihaknukvill  - 5days  4 Nights",
-   desc: "Teuk thla, Toul Kork, Phom Penh" 
+   image: './assets/img/home-img-4.png',
+   title: 'Koh Rong, Sihaknukvill  - 5days  4 Nights',
+   desc: 'Teuk thla, Toul Kork, Phom Penh' 
   },
 
 ];
 
 let cardDisplay = card.map(
-(data) =>{
-    return 
-    `
-    <div class="border-1 border-black w-70 h-95 rounded-2xl">
+(data, idx) => {
+    return `
+    <div class="border-1 border-gray-300 w-70 h-95 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer transition duration-500 hover:scale-110"
+         data-aos="fade-up"
+         data-aos-anchor-placement="top-center"
+         data-aos-delay="${100 + idx * 100}">
       <img 
       class="rounded-t-2xl"
       src="${data.image}">
@@ -70,7 +70,7 @@ let cardDisplay = card.map(
       <div class="flex justify-between items-center my-3">
         <p>$99.99</p>
       <p class="decoration-1 line-through opacity-50">$129.99</p>
-      <button class="border-1 border-[#2671c9] p-[0.3rem_0.3rem] rounded-md">Explore</button>
+      <button class="border-1 border-[#2671c9] p-[0.3rem_0.3rem] rounded-md cursor-pointer">Explore</button>
       </div>
       </div>
     </div>
@@ -78,4 +78,4 @@ let cardDisplay = card.map(
 }
 );
 
-document.getElementById("card").innerHTML += cardDisplay;
+document.getElementById("card").innerHTML = cardDisplay.join('');
