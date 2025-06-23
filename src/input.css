@@ -1,1 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
 @import "tailwindcss";
+
+/* Preline UI */
+@source "../node_modules/preline/dist/*.js";
+@import "../node_modules/preline/variants.css";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+
+    --color-primary: #50bca3;
+    --color-secondary: #ff9f1d
+}
+
+*{
+
+    font-family: "Montserrat", serif;
+}
+
+#text-1{
+
+    font-family: "Bubblegum Sans", serif;
+}
+
+#circle-tl{
+
+    animation: animation-tl 10s linear infinite alternate;
+}
+
+#circle-tr{
+
+    animation: animation-tr 25s linear infinite alternate;
+}
+
+#circle-bl{
+
+    animation: animation-bl 25s linear infinite alternate;
+}
+
+#circle-br{
+
+    animation: animation-br 10s linear infinite alternate;
+}
+
+@keyframes animation-tl{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(100%, -50%);
+    }
+}
+
+@keyframes animation-tr{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(-750%, 50%);
+    }
+}
+
+@keyframes animation-bl{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(-25%, -500%);
+    }
+}
+
+@keyframes animation-br{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(100%, -50%);
+    }
+}
