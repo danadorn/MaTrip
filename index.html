@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/inxput.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Home</title>
+  </head>
+      <body>
+        <header class="bg-white sticky top-0">
+          <section class="border-b-1 border-neutral-300 z-50">
+            <nav class="max-w-screen-xl container mx-auto flex justify-between h-24 z-10">
+              <div>
+                <a href="./index.html">
+                  <img
+                class="hover:scale-110 transition duration-500 hover:duration-500 cursor-pointer"
+                width="100"
+                src="./assets/img/logo.png" alt="logo">
+                </a>
+              </div>
+              <div class="flex items-center gap-20 text-primary font-bold transition duration-500 hover:duration-500 cursor-pointer">
+                <h2 class="hover:scale-110 hover:underline hover:underline-offset-2 transition duration-500 hover:duration-500">Tour</h2>
+                <h2 class="hover:scale-110 hover:underline hover:underline-offset-2 transition duration-500 hover:duration-500">Destination</h2>
+                <h2 class="hover:scale-110 hover:underline hover:underline-offset-2 transition duration-500 hover:duration-500">Event</h2>
+                <h2 class="hover:scale-110 hover:underline hover:underline-offset-2 transition duration-500 hover:duration-500">About Us</h2>
+              </div>
+              <div class="flex items-center">
+                <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#48a992] transition duration-500 hover:duration-500 cursor-pointer">Log In</button>
+              </div>
+            </nav>
+          </section>
+        </header>
+        <main>
+          
+          <section class="relative bg-[#f0ffde] z-[-1]">
+  <div id="circle-tl" class="absolute size-30 bg-secondary rounded-full top-[-4.5rem] z-[-1]" data-aos="zoom-in" data-aos-delay="200"></div>
+  <div id="circle-tr" class="absolute size-15 bg-primary rounded-full top-[-1rem] right-0 z-[-1]" data-aos="fade-down-left" data-aos-delay="400"></div>
+  <div id="circle-bl" class="absolute size-15 bg-primary rounded-full bottom-[10rem] left-[5rem] z-[-1]" data-aos="fade-up-right" data-aos-delay="500"></div>
+  <div id="circle-br" class="absolute size-45 bg-secondary rounded-full bottom-[-5rem] right-[15rem] z-[-1]" data-aos="zoom-in" data-aos-delay="00"></div>
+
+  <div class="max-w-screen-xl container mx-auto min-h-[calc(100vh-6rem)] grid grid-cols-2 items-center">
+    <div data-aos="fade-right" data-aos-delay="200">
+      <h3 id="text-1" class="text-secondary text-2xl">Amazing place to relax</h3>
+      <h1 class="text-7xl font-bold my-10 text-[#309671]">Discover the most engaging place</h1>
+      <p class="text-lg text-[#8c9f60]">Less planning, 50,000 trips are ready for you.</p>
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="400">
+      <img src="./assets/img/hero-section.png" alt="Hero Image" />
+    </div>
+  </div>
+</section>
+<section class="max-w-screen-xl container mx-auto min-h-[90vh] mt-20">
+  <div>
+    <h2 class="text-3xl font-bold">Discover Weekly</h2>
+    <p class="text-lg mt-3 mb-10">Let MaTrip inspire your next adventure with fresh travel content, hidden gems, and smart tips to make the most of your journey.</p>
+  </div>
+  <div id="card" class="grid grid-cols-4">
+  </div>
+</section>
+        </main>
+
+        <script src="./node_modules/preline/dist/preline.js"></script>
+      </body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true, // run animation once only
+    easing: 'ease-in-out',
+    delay: 100
+  });
+</script>
+  <script src="./app.js"></script>
+</html>
