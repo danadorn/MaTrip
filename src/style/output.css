@@ -1,6 +1,9 @@
 /*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+=======
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -9,6 +12,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+<<<<<<< HEAD
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-green-600: oklch(62.7% 0.194 149.214);
@@ -68,6 +72,13 @@
     --color-primary: #075dc1;
     --color-secondary: #ff9f1d;
     --color-ascent: #50bca3;
+=======
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-bold: 700;
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
   }
 }
 @layer base {
@@ -216,6 +227,7 @@
   }
 }
 @layer utilities {
+<<<<<<< HEAD
   .collapse {
     visibility: collapse;
   }
@@ -790,10 +802,22 @@
     border-top-left-radius: var(--radius-lg);
     border-top-right-radius: var(--radius-lg);
   }
+=======
+  .table {
+    display: table;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+<<<<<<< HEAD
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -959,10 +983,13 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+=======
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+<<<<<<< HEAD
   .text-7xl {
     font-size: var(--text-7xl);
     line-height: var(--tw-leading, var(--text-7xl--line-height));
@@ -990,10 +1017,13 @@
     --tw-font-weight: var(--font-weight-medium) !important;
     font-weight: var(--font-weight-medium) !important;
   }
+=======
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+<<<<<<< HEAD
   .font-light {
     --tw-font-weight: var(--font-weight-light);
     font-weight: var(--font-weight-light);
@@ -1090,10 +1120,16 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-gray-500) var(--tw-shadow-alpha), transparent);
     }
   }
+=======
+  .underline {
+    text-decoration-line: underline;
+  }
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+<<<<<<< HEAD
   .blur {
     --tw-blur: blur(8px);
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1772,6 +1808,8 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+=======
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1782,6 +1820,7 @@
   syntax: "*";
   inherits: false;
 }
+<<<<<<< HEAD
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1847,11 +1886,14 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+=======
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
 }
+<<<<<<< HEAD
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1986,6 +2028,14 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
+=======
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+>>>>>>> a5f257f6185c76f4915ce2eb962487bd29870f1d
     }
   }
 }
