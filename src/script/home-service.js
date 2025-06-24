@@ -1,4 +1,5 @@
-const card = [
+const services = [
+
   {image: './assets/img/home-img-1.png',
    title: 'Angkor Wat, Siem Reap  - 5days  4 Nights',
    desc: 'Teuk thla, Toul Kork, Phom Penh' 
@@ -19,38 +20,13 @@ const card = [
    image: './assets/img/home-img-4.png',
    title: 'Koh Rong, Sihaknukvill  - 5days  4 Nights',
    desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
+  }
+]
 
-    {
-   image: './assets/img/home-img-1.png',
-   title: 'Angkor Wat, Siem Reap  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
-
-    {
-   image: './assets/img/home-img-2.png',
-   title: 'Kirirom, Kampung Spue  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
-
-    {
-   image: './assets/img/home-img-3.png',
-   title: 'Seahorse, Kampot  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
-
-    {
-   image: './assets/img/home-img-4.png',
-   title: 'Koh Rong, Sihaknukvill  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
-
-];
-
-let cardDisplay = card.map(
+let cardServices = services.map(
 (data, idx) => {
     return `
-    <div class="border-1 border-gray-300 w-70 h-95 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer transition duration-500 hover:scale-110"
+    <div class="border-1 border-gray-300 w-70 h-95 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer"
          data-aos="fade-up"
          data-aos-anchor-placement="top-center"
          data-aos-delay="${100 + idx * 100}">
@@ -78,4 +54,4 @@ let cardDisplay = card.map(
 }
 );
 
-document.getElementById("card").innerHTML = cardDisplay.join('');
+document.getElementById("card-2").innerHTML = cardServices.join('');
