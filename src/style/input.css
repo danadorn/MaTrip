@@ -24,6 +24,30 @@
     font-family: "Montserrat", serif;
 }
 
+.abt-hero-section{
+
+    background: url("../../assets/img/aboutUs-hero-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dest-hero-section{
+
+    background: url("../../assets/img/dest-hero-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tour-hero-section{
+
+    background: url("../../assets/img/tour-section-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* #section-1{
 
     background: url("../assets/img/hero-section-2.png");
@@ -31,6 +55,8 @@
     background-size: cover;
     background-position: center;
 } */
+
+
 
 #text-1{
 
@@ -102,29 +128,6 @@
     }
 }
 
-.abt-hero-section{
-
-    background: url("../../assets/img/aboutUs-hero-section.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#dest-hero-section{
-
-    background: url("../../assets/img/dest-hero-section.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#tour-hero-section{
-
-    background: url("../../assets/img/tour-section-hero.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 
 #destination-1{
