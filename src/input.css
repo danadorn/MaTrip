@@ -24,13 +24,29 @@
     font-family: "Montserrat", serif;
 }
 
-/* #section-1{
+.abt-hero-section{
 
-    background: url("../assets/img/hero-section-2.png");
+    background: url("../assets/img/aboutUs-hero-section.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#dest-hero-section{
+
+    background: url("../assets/img/dest-hero-section.png");
     background-position: center;
-} */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tour-hero-section{
+
+    background: url("../assets/img/tour-section-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #text-1{
 
