@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/input.css" />
-    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../style/input.css" />
+    <link rel="stylesheet" href="../style/output.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Destination</title>
+    <title>Tour</title>
 </head>
 <body>
 
@@ -24,11 +24,11 @@
           class="container z-10 flex justify-between h-24 max-w-screen-xl mx-auto"
         >
           <div>
-            <a href="../index.html">
+            <a href="../../index.html">
               <img
                 class="transition duration-500 cursor-pointer hover:scale-110 hover:duration-500"
                 width="100"
-                src="../assets/img/logo.png"
+                src="../../assets/img/logo.png"
                 alt="logo"
               />
             </a>
@@ -76,22 +76,17 @@
       </section>
     </header>
 
-    <main class="mt-22">
-
-        <section
-        data-aos="fade-down"
-        data-aos-delay="500"
-        id="dest-hero-section" class="h-[90vh]">
-            <div class="container max-w-screen-xl mx-auto">
-                <h1 
-                data-aos="fade-down"
-                data-aos-delay="200"
-                class="font-bold text-center pt-15 text-7xl text-primary">Destination</h1>
+    <main class="mt-20">
+        <section id="tour-hero-section" class="h-[90vh]">
+            <div class="container max-w-screen-xl mx-auto"> 
+                <h1 class="mt-20 font-bold text-center text-7xl text-primary">Tour Service</h1>
+                <p>Discover the wonders of Cambodia with our trusted local guides.</p>
             </div>
         </section>
     </main>
 
-    <footer
+
+        <footer
       class="bg-primary text-white mt-20 h-[60vh]"
       data-aos="fade-up"
       data-aos-delay="300"
@@ -190,13 +185,13 @@
     
 </body>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
     AOS.init({
       duration: 1000,
       once: false,
       easing: "ease-in-out",
     });
-  </script>
-  <script src="../src/script/scroll-progress.js"></script>
+    </script>
+    <script src="../src/script/scroll-progress.js"></script>
 </html>
