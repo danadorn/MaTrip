@@ -48,16 +48,6 @@
     background-size: cover;
 }
 
-/* #section-1{
-
-    background: url("../assets/img/hero-section-2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
-
-
-
 #text-1{
 
     font-family: "Bubblegum Sans", serif;
@@ -129,7 +119,6 @@
 }
 
 
-
 #destination-1{
 
     background: url("../../assets/img/siemreap-1.png");
@@ -164,5 +153,3 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-@import "tailwindcss";
