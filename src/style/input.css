@@ -34,7 +34,7 @@
 
 #dest-hero-section{
 
-    background: url("../../assets/img/dest-hero-section.png");
+    background: url("../../assets/img/dest-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +46,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.hotel-section{
+
+    background: url("../../assets/img/hotel.jpg")
+
 }
 
 #text-1{
