@@ -26,19 +26,21 @@ const eventCard = [
 let eventServices = eventCard.map(
 (data) => {
     return `
-      <div class="grid grid-cols-[1.4fr_1fr_1fr] h-[250px] items-center gap-10 border-b-1 border-gray-200 shadow-2xl shadow-gray-30 rounded-4xl px-10">
+      <div class="grid grid-cols-[1.4fr_1fr_1fr] h-75 items-center gap-10 border-b-1 border-gray-200 shadow-2xl shadow-gray-30 rounded-4xl px-10"
+         data-aos="fade-up"
+         data-aos-anchor-placement="top-center">
             <div class="">
             <div class="flex gap-10 items-center">
             <div class="flex gap-3 items-center">
-                <i class="fa-solid fa-calendar "></i>
+                <i class="fa-solid fa-calendar  text-ascent"></i>
                 <p>${data.date}</p>
             </div>
             <div class="flex gap-3 items-center">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot text-ascent"></i>
                 <p>${data.location}</p>
             </div>
         </div>
-        <h2 class="font-bold text-3xl mt-10">${data.title}</h2>
+        <h2 class="font-bold text-3xl mt-10 text-primary">${data.title}</h2>
         </div>
         <div>
             <img 
