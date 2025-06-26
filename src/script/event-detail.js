@@ -23,7 +23,7 @@ const eventData = {
     date: "4 to 6 - November - 2025",
     location: "Phnom Penh Riverside",
     description:
-      "Join the exciting Phnom Penh Water Festival 2025 along the riverside! Enjoy traditional boat races, live music, food stalls, and fireworks. Celebrate Cambodia’s vibrant culture in this national event full of energy and community spirit.",
+      "Join the exciting Phnom Penh Water Festival 2025 along the riverside! Enjoy traditional boat races, live music, food stalls, and fireworks. Celebrate Cambodia's vibrant culture in this national event full of energy and community spirit.",
     price: "$30",
     startDate: "4 November 2025",
     images: [
