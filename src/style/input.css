@@ -56,6 +56,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -63,6 +64,15 @@
 
     background: url("../../assets/img/hotel.jpg")
 
+}
+
+#event-detail-hero-section{
+
+    background: url("../../assets/img/beksloy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #text-1{
