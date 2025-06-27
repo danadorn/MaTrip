@@ -34,25 +34,45 @@
 
 #dest-hero-section{
 
-    background: url("../../assets/img/dest-img.jpg");
+    background: url("../../assets/img/destination-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #tour-hero-section{
 
-    background: url("../../assets/img/tour-section-hero.png");
+    background: url("../../assets/img/new-Bokor-Mountain.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
+#event-hero-section{
+
+    background: url("../../assets/img/event.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 
 .hotel-section{
 
     background: url("../../assets/img/hotel.jpg")
 
+}
+
+#event-detail-hero-section{
+
+    background: url("../../assets/img/Water-Festival.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #text-1{
