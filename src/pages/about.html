@@ -17,513 +17,324 @@
   </head>
   <body class="dark:bg-neutral-900">
     <header id="start" class="bg-white dark:bg-black">
-      <section
-        class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99"
-      >
-        <div
-          id="scrollBar"
-          class="absolute top-0 left-0 bg-primary h-2 w-[0%] z-999"
-        ></div>
-        <nav
-          class="container z-10 flex justify-between items-center h-20 max-w-screen-xl mx-auto px-4 lg:px-0"
-        >
-          <div class="flex-shrink-0">
-            <a href="/index.html">
-              <img
-                class="transition duration-500 cursor-pointer hover:scale-110 hover:duration-500"
-                width="100"
-                src="/assets/img/logo.png"
-                alt="logo"
-              />
-            </a>
-          </div>
-          <button
-            id="menu-toggle"
-            class="md:hidden text-primary dark:text-secondary focus:outline-none p-2"
-          >
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
-          <div
-            id="nav-desktop-center-group"
-            class="hidden md:flex flex-grow justify-start md:justify-center"
-          >
-            <div
-              id="nav-links-desktop"
-              class="flex items-center gap-20 md:gap-10 lg:gap-20 text-xl font-bold transition duration-500 text-primary dark:text-secondary"
-            >
+      <section class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99">
+          <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-2 w-[0%] z-999"></div>
+          <nav class="container z-10 flex justify-between items-center h-20 max-w-screen-xl mx-auto px-4 lg:px-0">
+              <div class="flex-shrink-0">
+                  <a href="/index.html">
+                      <img class="transition duration-500 cursor-pointer hover:scale-110 hover:duration-500" width="100" src="/assets/img/logo.png" alt="logo" />
+                  </a>
+              </div>
+              <button id="menu-toggle" class="md:hidden text-primary dark:text-secondary focus:outline-none p-2">
+                  <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+              </button>
+              <div id="nav-desktop-center-group" class="hidden md:flex flex-grow justify-start md:justify-center">
+                  <div id="nav-links-desktop" class="flex items-center gap-20 md:gap-10 lg:gap-20 text-xl font-bold transition duration-500 text-primary dark:text-secondary">
+                      <a href="./src/pages/tour.html">
+                          <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">Tour</h2>
+                      </a>
+                      <a href="./src/pages/destination.html">
+                          <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">Destination</h2>
+                      </a>
+                      <a href="./src/pages/event.html">
+                          <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">Event</h2>
+                      </a>
+                      <a href="./src/pages/about.html">
+                          <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">About Us</h2>
+                      </a>
+                  </div>
+              </div>
+              <div id="nav-desktop-right-buttons" class="hidden md:flex items-center gap-4 lg:gap-10 flex-shrink-0">
+                  <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="dark">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                          <svg class="shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                          </svg>
+                      </span>
+                  </button>
+                  <button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="light">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                          <svg class="shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="4"></circle>
+                              <path d="M12 2v2"></path>
+                              <path d="M12 20v2"></path>
+                              <path d="m4.93 4.93 1.41 1.41"></path>
+                              <path d="m17.66 17.66 1.41 1.41"></path>
+                              <path d="M2 12h2"></path>
+                              <path d="M20 12h2"></path>
+                              <path d="m6.34 17.66-1.41 1.41"></path>
+                              <path d="m19.07 4.93-1.41 1.41"></path>
+                          </svg>
+                      </span>
+                  </button>
+                  <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                      Log In
+                  </button>
+              </div>
+          </nav>
+      </section>
+      <div id="nav-links-mobile" class="hidden fixed top-20 left-0 w-full bg-white dark:bg-black overflow-y-auto" style="height: calc(100vh - 80px); z-index: 95;">
+          <div class="flex flex-col items-start py-4 w-full">
               <a href="./src/pages/tour.html">
-                <h2
-                  class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500"
-                >
-                  Tour
-                </h2>
+                  <h2 class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center">Tour</h2>
               </a>
               <a href="./src/pages/destination.html">
-                <h2
-                  class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500"
-                >
-                  Destination
-                </h2>
+                  <h2 class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center">Destination</h2>
               </a>
               <a href="./src/pages/event.html">
-                <h2
-                  class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500"
-                >
-                  Event
-                </h2>
+                  <h2 class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center">Event</h2>
               </a>
               <a href="./src/pages/about.html">
-                <h2
-                  class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500"
-                >
-                  About Us
-                </h2>
+                  <h2 class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center">About Us</h2>
               </a>
-            </div>
+              <div class="flex flex-col items-start ml-4 gap-4 py-4 mt-4 border-t border-gray-200 dark:border-neutral-700 w-full">
+                  <button type="button" class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="dark">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                          <svg class="shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                          </svg>
+                      </span>
+                  </button>
+                  <button type="button" class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-theme-click-value="light">
+                      <span class="group inline-flex shrink-0 justify-center items-center size-9">
+                          <svg class="shrink-0 size-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                              <circle cx="12" cy="12" r="4"></circle>
+                              <path d="M12 2v2"></path>
+                              <path d="M12 20v2"></path>
+                              <path d="m4.93 4.93 1.41 1.41"></path>
+                              <path d="m17.66 17.66 1.41 1.41"></path>
+                              <path d="M2 12h2"></path>
+                              <path d="M20 12h2"></path>
+                              <path d="m6.34 17.66-1.41 1.41"></path>
+                              <path d="m19.07 4.93-1.41 1.41"></path>
+                          </svg>
+                      </span>
+                  </button>
+                  <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
+                      Log In
+                  </button>
+              </div>
           </div>
-          <div
-            id="nav-desktop-right-buttons"
-            class="hidden md:flex items-center gap-4 lg:gap-10 flex-shrink-0"
-          >
-            <button
-              type="button"
-              class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-              data-hs-theme-click-value="dark"
-            >
-              <span
-                class="group inline-flex shrink-0 justify-center items-center size-9"
-              >
-                <svg
-                  class="shrink-0 size-4"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                </svg>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-              data-hs-theme-click-value="light"
-            >
-              <span
-                class="group inline-flex shrink-0 justify-center items-center size-9"
-              >
-                <svg
-                  class="shrink-0 size-4"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <path d="M12 2v2"></path>
-                  <path d="M12 20v2"></path>
-                  <path d="m4.93 4.93 1.41 1.41"></path>
-                  <path d="m17.66 17.66 1.41 1.41"></path>
-                  <path d="M2 12h2"></path>
-                  <path d="M20 12h2"></path>
-                  <path d="m6.34 17.66-1.41 1.41"></path>
-                  <path d="m19.07 4.93-1.41 1.41"></path>
-                </svg>
-              </span>
-            </button>
-            <button
-              class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer"
-            >
-              Log In
-            </button>
-          </div>
-        </nav>
-      </section>
-      <div
-        id="nav-links-mobile"
-        class="hidden fixed top-20 left-0 w-full bg-white dark:bg-black overflow-y-auto"
-        style="height: calc(100vh - 80px); z-index: 95"
-      >
-        <div class="flex flex-col items-start py-4 w-full">
-          <a href="./src/pages/tour.html">
-            <h2
-              class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center"
-            >
-              Tour
-            </h2>
-          </a>
-          <a href="./src/pages/destination.html">
-            <h2
-              class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center"
-            >
-              Destination
-            </h2>
-          </a>
-          <a href="./src/pages/event.html">
-            <h2
-              class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center"
-            >
-              Event
-            </h2>
-          </a>
-          <a href="./src/pages/about.html">
-            <h2
-              class="text-xl font-bold text-primary dark:text-secondary py-2 px-4 hover:bg-gray-100 dark:hover:bg-neutral-800 w-full text-center"
-            >
-              About Us
-            </h2>
-          </a>
-          <div
-            class="flex flex-col items-start ml-4 gap-4 py-4 mt-4 border-t border-gray-200 dark:border-neutral-700 w-full"
-          >
-            <button
-              type="button"
-              class="hs-dark-mode-active:hidden block hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-              data-hs-theme-click-value="dark"
-            >
-              <span
-                class="group inline-flex shrink-0 justify-center items-center size-9"
-              >
-                <svg
-                  class="shrink-0 size-4"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                </svg>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
-              data-hs-theme-click-value="light"
-            >
-              <span
-                class="group inline-flex shrink-0 justify-center items-center size-9"
-              >
-                <svg
-                  class="shrink-0 size-4"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <path d="M12 2v2"></path>
-                  <path d="M12 20v2"></path>
-                  <path d="m4.93 4.93 1.41 1.41"></path>
-                  <path d="m17.66 17.66 1.41 1.41"></path>
-                  <path d="M2 12h2"></path>
-                  <path d="M20 12h2"></path>
-                  <path d="m6.34 17.66-1.41 1.41"></path>
-                  <path d="m19.07 4.93-1.41 1.41"></path>
-                </svg>
-              </span>
-            </button>
-            <button
-              class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit"
-            >
-              Log In
-            </button>
-          </div>
-        </div>
       </div>
     </header>
 
     <main class="mt-15">
       <section data-aos="fade-up" data-aos-delay="200" class="relative">
+        <div class="container max-w-screen-xl mx-auto abt-hero-section h-[90vh] flex flex-col justify-center px-4 md:px-8 lg:px-0">
+            <h1 data-aos="fade-right" data-aos-delay="200" class="font-bold text-4xl md:text-6xl lg:text-7xl text-primary mb-4">
+                MaTrip <span class="text-secondary">Team</span>
+            </h1>
+            <p data-aos="fade-left" data-aos-delay="300" class="p-5 my-5 md:my-10 text-base md:text-xl lg:text-xl lg:leading-9 text-black/90 rounded-xl bg-white/60 backdrop-blur-xl w-full md:w-3/4 lg:w-[32.5rem]">
+                MaTrip was created by a team of students from ISTAD who love travel
+                and technology. We built this website as part of our learning journey
+                to improve our web development skills and solve a real-world problem
+                for making travel planning simple, smart, and fun.
+            </p>
+            <a href="#">
+                <button class="p-[0.8rem_1rem] lg:p-[1rem_1.2rem] rounded-xl bg-secondary absolute bottom-10 left-5 md:bottom-70 md:left-10 lg:bottom-20 lg:left-30 cursor-pointer font-semibold text-white hover:scale-110 transition duration-500">
+                    Learn more
+                </button>
+            </a>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden py-16 md:py-20 lg:py-24">
         <div
-          class="container max-w-screen-xl mx-auto abt-hero-section h-[90vh] flex flex-col justify-center"
-        >
-          <h1
-            data-aos="fade-right"
+            id="circle-tl"
+            class="absolute w-20 h-20 sm:w-24 sm:h-24 md:w-[120px] md:h-[120px] bg-ascent rounded-full top-[-2rem] left-[-2rem] sm:top-[-3rem] sm:left-[-3rem] md:top-[-4.5rem] md:left-[-4.5rem] z-[-1]"
+            data-aos="zoom-in"
             data-aos-delay="200"
-            class="font-bold text-7xl text-primary"
-          >
-            MaTrip <span class="text-secondary">Team</span>
-          </h1>
-          <p
-            data-aos="fade-left"
-            data-aos-delay="300"
-            class="p-5 my-10 space-y-3 text-xl leading-9 text-black/90 rounded-xl bg-white/60 backdrop-blur-xl w-130"
-          >
-            MaTrip was created by a team of students from ISTAD who love travel
-            and technology.We built this website as part of our learning journey
-            to improve our web development skills and solve a real-world problem
-            for making travel planning simple, smart, and fun.
-          </p>
-        </div>
-        <a href="">
-          <button
-            class="p-[1rem_1.2rem] rounded-xl bg-secondary absolute bottom-20 left-30 cursor-pointer font-semibold text-white hover:scale-110 transition duration-500"
-          >
-            Learn more
-          </button>
-        </a>
-      </section>
-
-      <section class="relative">
-        <div
-          id="circle-tl"
-          class="absolute size-30 bg-ascent rounded-full top-[-4.5rem] z-[-1]"
-          data-aos="zoom-in"
-          data-aos-delay="200"
         ></div>
         <div
-          id="circle-tr"
-          class="absolute size-25 bg-secondary rounded-full top-[-1rem] right-0 z-[-1]"
-          data-aos="fade-down-left"
-          data-aos-delay="400"
+            id="circle-tr"
+            class="absolute w-16 h-16 sm:w-20 sm:h-20 md:w-[100px] md:h-[100px] bg-secondary rounded-full top-[-0.5rem] right-[-0.5rem] sm:top-[-1rem] sm:right-[-1rem] md:top-[-1rem] md:right-0 z-[-1]"
+            data-aos="fade-down-left"
+            data-aos-delay="400"
         ></div>
         <div
-          id="circle-bl"
-          class="absolute size-15 bg-ascent rounded-full bottom-[10rem] left-[5rem] z-[-1]"
-          data-aos="fade-up-right"
-          data-aos-delay="500"
+            id="circle-bl"
+            class="absolute w-10 h-10 sm:w-12 sm:h-12 md:w-[60px] md:h-[60px] bg-ascent rounded-full bottom-10 left-5 sm:bottom-16 sm:left-10 md:bottom-[10rem] md:left-[5rem] z-[-1]"
+            data-aos="fade-up-right"
+            data-aos-delay="500"
         ></div>
         <div
-          id="circle-br"
-          class="absolute size-45 bg-primary rounded-full bottom-[-5rem] right-[15rem] z-[-1]"
-          data-aos="zoom-in"
-          data-aos-delay="00"
+            id="circle-br"
+            class="absolute w-24 h-24 sm:w-32 sm:h-32 md:w-[180px] md:h-[180px] bg-primary rounded-full bottom-[-2rem] right-0 sm:bottom-[-3rem] sm:right-5 md:bottom-[-5rem] md:right-[15rem] z-[-1]"
+            data-aos="zoom-in"
+            data-aos-delay="0"
         ></div>
 
-        <div
-          class="container grid max-w-screen-xl grid-cols-2 mx-auto mt-20 gap-50"
-        >
-          <div data-aos="fade-right" data-aos-delay="800">
-            <img
-              data-aos="fade-right"
-              data-aos-delay="200"
-              class="mx-auto"
-              src="../../assets/img/plane.png"
-              alt=""
-            />
-            <h2
-              data-aos="fade-right"
-              data-aos-delay="300"
-              class="mb-10 text-3xl font-bold text-primary"
-            >
-              Discover Our Travel Guideline
-            </h2>
-            <p
-              data-aos="fade-right"
-              data-aos-delay="400"
-              class="text-xl text-gray-600"
-            >
-              Get ready to explore with confidence.MaTrip's travel guideline
-              gives you all the essentials tips, checklists, and advice for a
-              smooth and safe journey.
-            </p>
-            <br />
-            <p
-              data-aos="fade-right"
-              data-aos-delay="500"
-              class="mb-10 text-xl text-gray-600"
-            >
-              Make your trip easy and stress-free with MaTrip's simple
-              guide.From what to pack to safety tips we've got you
-              covered.Travel smart. Travel safe. Travel with MaTrip.
-            </p>
-            <button
-              class="p-[1rem_1.2rem] border-2 border-secondary text-secondary rounded-xl font-semibold hover:scale-110 transition duration-500 cursor-pointer"
-            >
-              Contact Us
-            </button>
-          </div>
-          <div class="">
-            <div
-              data-aos="fade-up"
-              data-aos-delay="100"
-              class="absolute z-10 p-8 right-140 top-10 bg-ascent"
-            >
-              <img
-                class="mx-auto mb-3"
-                src="../../assets/img/small-plan.png"
-                alt=""
-              />
-              <h4 class="mb-3 text-3xl font-bold text-center text-white">
-                10M
-              </h4>
-              <p class="text-lg text-center text-white">Different parts</p>
-            </div>
-            <img
-              data-aos="fade-left"
-              data-aos-delay="100"
-              class="w-full z-[-1]"
-              src="../../assets/img/abt-section-1.png"
-              alt=""
-            />
-
-            <div>
-              <div class="flex items-center mt-10">
+        <div class="container max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-12 lg:gap-x-20 px-4 sm:px-6 md:px-8 ">
+            <div data-aos="fade-right" data-aos-delay="800" class="flex flex-col items-center text-center lg:items-start lg:text-left lg:pr-10 ">
                 <img
-                  data-aos="fade-left"
-                  data-aos-delay="200"
-                  src="../../assets/img/abt-vec-1.png"
-                  alt=""
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                    class="mx-auto w-40 h-auto sm:w-48 md:w-60 lg:w-auto mb-8"
+                    src="../../assets/img/plane.png"
+                    alt="Plane icon"
                 />
-                <div class="ml-7">
-                  <h3
-                    data-aos="fade-left"
+                <h2
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                    class="mb-4 text-1xl md:text-2xl lg:text-3xl font-bold text-primary"
+                >
+                    Discover Our Travel Guideline
+                </h2>
+                <p
+                    data-aos="fade-right"
                     data-aos-delay="400"
-                    class="mb-2 text-2xl font-bold text-secondary"
-                  >
-                    Reliable & Fully Insured
-                  </h3>
-                  <p data-aos="fade-left" data-aos-delay="400">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt, qui.
-                  </p>
-                </div>
-              </div>
-              <div class="flex items-center mt-10">
-                <img
-                  data-aos="fade-left"
-                  data-aos-delay="500"
-                  src="../../assets/img/abt-vec-2.png"
-                  alt=""
-                />
-                <div class="ml-7">
-                  <h3
-                    data-aos="fade-left"
+                    class="text-base md:text-xl lg:text-1xl text-gray-600 mb-2 mt-8"
+                >
+                    Get ready to explore with confidence. MaTrip's travel guideline
+                    gives you all the essentials tips, checklists, and advice for a
+                    smooth and safe journey.
+                </p>
+                <p
+                    data-aos="fade-right"
                     data-aos-delay="500"
-                    class="mb-2 text-2xl font-bold text-secondary"
-                  >
-                    Trusted & Experienced
-                  </h3>
-                  <p data-aos="fade-left" data-aos-delay="500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolorum, eaque.
-                  </p>
-                </div>
-              </div>
+                    class="mb-4 text-base md:text-xl lg:text-1xl text-gray-600 mt-8"
+                >
+                    Make your trip easy and stress-free with MaTrip's simple
+                    guide. From what to pack to safety tips we've got you
+                    covered. Travel smart. Travel safe. Travel with MaTrip.
+                </p>
+                <button
+                    class="p-[0.8rem_1rem] sm:p-[1rem_1.2rem] border-2 border-secondary text-secondary rounded-xl font-semibold hover:scale-110 transition duration-500 cursor-pointer mt-4"
+                >
+                    Contact Us
+                </button>
             </div>
-          </div>
+            <div class="flex flex-col items-center lg:items-start relative lg:pt-16">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  class="absolute z-10 p-6 sm:p-8 bg-ascent shadow-lg
+                        top-0 right-1/2 translate-x-1/2
+                        sm:top-5 sm:right-5 sm:translate-x-0
+                        md:top-5 md:left-0 md:right-auto md:translate-x-0
+                        lg:top-10 lg:left-10 lg:right-auto lg:translate-x-0" >
+                  <img
+                      class="mx-auto mb-3 w-12 sm:w-16"
+                      src="../../assets/img/small-plan.png"
+                      alt="Small plane icon"
+                  />
+                  <h4 class="mb-2 text-2xl sm:text-3xl font-bold text-center text-white">
+                      10M
+                  </h4>
+                  <p class="text-base sm:text-lg text-center text-white">Different parts</p>
+                </div>
+                
+                <img
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                    class="w-full h-auto max-w-sm sm:max-w-md lg:max-w-none z-0 mt-20 sm:mt-24 lg:mt-0 lg:ml-auto"
+                    src="../../assets/img/abt-section-1.png"
+                    alt="Travel map illustration"
+                />
+
+                <div class="w-full flex flex-col items-start px-4 sm:px-0">
+                    <div class="flex items-start mt-8 sm:mt-10 lg:mt-16 w-full">
+                        <img
+                            data-aos="fade-left"
+                            data-aos-delay="200"
+                            class="flex-shrink-0 w-16 h-auto sm:w-10"
+                            src="../../assets/img/abt-vec-1.png"
+                            alt="Vector icon 1"
+                        />
+                        <div class="ml-4 sm:ml-7 flex-grow">
+                            <h3
+                                data-aos="fade-left"
+                                data-aos-delay="400"
+                                class="mb-2 text-xl sm:text-2xl font-bold text-secondary"
+                            >
+                                Reliable & Fully Insured
+                            </h3>
+                            <p data-aos="fade-left" data-aos-delay="400" class="text-sm sm:text-base text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sunt, qui.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mt-8 sm:mt-10 w-full">
+                        <img
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            class="flex-shrink-0 w-16 h-auto sm:w-10"
+                            src="../../assets/img/abt-vec-2.png"
+                            alt="Vector icon 2"
+                        />
+                        <div class="ml-4 sm:ml-7 flex-grow">
+                            <h3
+                                data-aos="fade-left"
+                                data-aos-delay="500"
+                                class="mb-2 text-xl sm:text-2xl font-bold text-secondary"
+                            >
+                                Trusted & Experienced
+                            </h3>
+                            <p data-aos="fade-left" data-aos-delay="500" class="text-sm sm:text-base text-gray-600">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolorum, eaque.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </section>
 
-      <section>
-        <div
-          class="container relative grid max-w-screen-xl grid-cols-2 mx-auto mt-60 gap-30 h-[70vh]"
-        >
-          <div class="relative">
-            <h2
-              data-aos="fade-right"
-              data-aos-delay="100"
-              class="mb-10 text-3xl font-bold text-primary"
-            >
+      <section class="px-2 sm:px-10 lg:px-30 py-20 bg-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-16 text-center md:text-center lg:text-left">
+          <div>
+            <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-primary mb-10">
               Our Popular Tours
             </h2>
-            <p data-aos="fade-right" data-aos-delay="300" class="mb-10">
-              At Ma Trip, we carefully craft tours that travelers love the most.
-              These popular tours highlight the best destinations, unique
-              experiences, and hidden gems to make your journey unforgettable.
-              Whether you're seeking adventure, cultural exploration, or
-              relaxing escapes, our top tours are designed to offer something
-              special for every type of traveler. Join thousands of happy
-              travelers who have enjoyed these amazing trips and find your
-              perfect travel experience with us.
+            <p class="text-sm sm:text-base text-gray-700 mb-6">
+              At Ma Trip, we carefully craft tours that travelers love the most. These
+              popular tours highlight the best destinations, unique experiences, and
+              hidden gems to make your journey unforgettable. Whether you're seeking
+              adventure, cultural exploration, or relaxing escapes, our top tours are
+              designed to offer something special for every type of traveler. Join
+              thousands of happy travelers who have enjoyed these amazing trips and find
+              your perfect travel experience with us.
             </p>
-            <div>
-              <h3 data-aos="fade-right" data-aos-delay="100">Countryside</h3>
-              <p
-                data-aos="fade-left"
-                data-aos-delay="300"
-                class="absolute right-0 bottom-50"
-              >
-                100%
-              </p>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="500"
-                class="w-full h-3 mt-3 mb-7 bg-ascent"
-              ></div>
+            <div class="mb-6">
+              <div class="flex justify-between items-center font-medium">
+                <span>Countryside</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full h-3 mt-2 rounded-full bg-emerald-500"></div>
             </div>
-            <div>
-              <h3 data-aos="fade-right" data-aos-delay="100">Temples</h3>
-              <p
-                data-aos="fade-left"
-                data-aos-delay="300"
-                class="absolute right-0 bottom-32"
-              >
-                100%
-              </p>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="500"
-                class="w-full h-3 mt-3 mb-7 bg-ascent"
-              ></div>
+            <div class="mb-6">
+              <div class="flex justify-between items-center font-medium">
+                <span>Temples</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full h-3 mt-2 rounded-full bg-emerald-500"></div>
             </div>
-            <div>
-              <h3 data-aos="fade-right" data-aos-delay="100">Beach</h3>
-              <p
-                data-aos="fade-left"
-                data-aos-delay="300"
-                class="absolute right-0 bottom-12"
-              >
-                100%
-              </p>
-              <div
-                data-aos="fade-right"
-                data-aos-delay="500"
-                class="w-full h-3 mt-3 mb-7 bg-ascent"
-              ></div>
+            <div class="mb-6">
+              <div class="flex justify-between items-center font-medium">
+                <span>Beach</span>
+                <span>100%</span>
+              </div>
+              <div class="w-full h-3 mt-2 rounded-full bg-emerald-500"></div>
             </div>
           </div>
-          <div>
-            <div>
-              <img
-                data-aos="fade-left"
-                data-aos-delay="200"
-                class="rounded-t-[8rem] rounded-b-[8rem] border-8 border-gray-200 shadow-2xl shadow-gray-600 w-80 absolute top-0 right-0"
-                src="../../assets/img/abt-section-2.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                data-aos="fade-right"
-                data-aos-delay="400"
-                class="rounded-t-[5rem] rounded-b-[5rem] border-8 border-gray-200 shadow-2xl shadow-gray-600 w-60 absolute top-50 right-50"
-                src="../../assets/img/abt-section-3.png"
-                alt=""
-              />
-            </div>
+          <div class="relative grid justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+            <img
+              src="../../assets/img/abt-section-2.png"
+              alt="Main Destination"
+              class="rounded-[8rem] w-64 sm:w-60 md:w-70 lg:w-80 border-8 border-gray-200 shadow-2xl absolute top-[-5] right-0"
+            />
+            <img
+              src="../../assets/img/abt-section-3.png"
+              alt="Secondary Spot"
+              class="w-40 sm:w-60 md:w-70 lg:w-80 rounded-[5rem] border-8 border-gray-200 shadow-2xl -translate-x-1/2 -translate-y-1/2 absolute top-30 right-20"
+            />
           </div>
         </div>
       </section>
-
       <section>
         <div class="max-w-screen-xl mx-auto mt-40 conntainer">
           <div>
@@ -894,7 +705,7 @@
       </section>
 
       <section>
-        <div class="max-w-screen-xl container mx-auto">
+        <div class="max-w-screen-xl container mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 ">
           <h2
             data-aos="fade-up"
             data-aos-delay="100"
@@ -906,7 +717,7 @@
             <div
               data-aos="flip-down"
               data-aos-delay="300"
-              class="flex gap-50 justify-center mt-20 transform-3d"
+              class="grid gap-20 justify-center mt-20 transform-3d grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-items-center"
             >
               <div
                 class="border-gray-300 shadow-2xl shadow-gray-400 w-70 h-100 border-1 rounded-2xl hover:translate-z-5 hover:rotate-x-10 hover:rotate-z-5 transition duration-500"
@@ -974,7 +785,7 @@
             <div
               data-aos="flip-down"
               data-aos-delay="500"
-              class="flex justify-between mt-50 transform-3d"
+              class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 justify-between mt-50 transform-3d justify-items-center gap-20"
             >
               <div
                 class="border-gray-300 shadow-2xl shadow-gray-400 w-70 h-100 border-1 rounded-2xl hover:translate-z-5 hover:rotate-x-10 hover:rotate-z-5 transition duration-500"
@@ -1069,99 +880,55 @@
       </section>
     </main>
 
-    <footer
-      class="bg-primary text-white mt-20 h-[60vh]"
-      data-aos="fade-up"
-      data-aos-delay="300"
-    >
-      <section class="border-gray-400 border-b-1">
-        <div
-          class="container grid items-center h-full max-w-screen-xl grid-cols-4 gap-20 mx-auto"
-        >
-          <div class="h-full mt-25">
-            <a href="../index.html">
-              <img
-                width="250"
-                src="../../assets/img/logo.png"
-                alt=""
-                data-aos="fade-down"
-              />
-            </a>
-          </div>
-          <div data-aos="fade-right" data-aos-delay="200" class="h-full mt-30">
-            <h2 class="mb-5 text-xl font-bold text-secondary">Support</h2>
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Customer Support</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Privacy & Policy</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Contact Channels</a
-            >
-          </div>
-          <div data-aos="fade-right" data-aos-delay="400" class="h-full mt-30">
-            <h2 class="mb-5 text-xl font-bold text-secondary">About Us</h2>
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Out Story</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Travel Blog & Tips</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Working with Us</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="../index.html#start"
-              >Be Our Partner</a
-            >
-          </div>
-          <div data-aos="fade-right" data-aos-delay="600" class="h-full mt-30">
-            <h2 class="mb-5 text-xl font-bold text-secondary">Contact Info</h2>
-            <p class="mb-8 font-light">
-              135 kampuchea krom ,Teuk Thla Toul Kork ,Phnom Penh Cambodia
-            </p>
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="mailto:MaTrip12@gmail.com"
-            >
-              <i class="mr-3 fa-solid fa-envelope text-secondary"></i
-              >MaTrip12@gmail.com</a
-            >
-            <a
-              class="block mt-2 font-light hover:font-bold hover:underline duration-800"
-              href="tel:+85512345678"
-            >
-              <i class="mr-3 fa-solid fa-phone-volume text-secondary"></i>+855
-              12345678</a
-            >
-          </div>
+    <footer class="bg-primary text-white mt-20">
+        <section class="border-gray-400 border-b">
+            <div class="container max-w-screen-xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-x-8 lg:gap-x-12 md:justify-itcenter items-start">
+
+                    <div class="flex justify-center sm:justify-start items-center">
+                        <a href="index.html">
+                            <img width="180" src="/assets/img/logo.png" alt="MaTrip Logo">
+                        </a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">Support</h2>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Customer Support</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Privacy & Policy</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Contact Channels</a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">About Us</h2>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Our Story</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Travel Blog & Tips</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Working with Us</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Be Our Partner</a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">Contact Info</h2>
+                        <p class="mb-4 font-light">135 Kampuchea Krom, Teuk Thla, Toul Kork, Phnom Penh, Cambodia</p>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="mailto:MaTrip12@gmail.com">
+                            <i class="mr-3 fa-solid fa-envelope text-secondary"></i>MaTrip12@gmail.com
+                        </a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="tel:+85512345678">
+                            <i class="mr-3 fa-solid fa-phone-volume text-secondary"></i>+855 12345678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto py-5 px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <p class="text-sm font-light mb-4 md:mb-0">© Copyright 2025 by Matrip.com</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <img class="h-6 sm:h-8" src="/assets/img/visa.png" alt="Visa">
+                <img class="h-6 sm:h-8" src="/assets/img/aba.png" alt="ABA">
+                <img class="h-6 sm:h-8" src="/assets/img/acleda.png" alt="ACLEDA">
+                <img class="h-6 sm:h-8" src="/assets/img/paypal.png" alt="PayPal">
+            </div>
         </div>
-      </section>
-      <div
-        class="container flex items-center justify-between max-w-screen-xl mx-auto mt-5"
-      >
-        <p class="text-sm font-light">© Copyright 2025 by Matrip.com</p>
-        <div class="flex gap-3">
-          <img src="../../assets/img/visa.png" alt="" />
-          <img src="../../assets/img/aba.png" alt="" />
-          <img src="../../assets/img/acleda.png" alt="" />
-          <img src="../../assets/img/paypal.png" alt="" />
-        </div>
-      </div>
     </footer>
 
     <script src="https://unpkg.com/preline@latest/dist/preline.js"></script>
