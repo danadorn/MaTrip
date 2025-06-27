@@ -6,7 +6,7 @@ const exploreTours = tourData.slice(0, 8);
 
 exploreTours.forEach((tour) => {
   const tourCard = document.createElement("div");
-  tourCard.className = 'bg-white shadow-lg rounded-lg overflow-hidden hover:scale-110 duration-300';
+  tourCard.className = 'hover:scale-110 duration-300';
 
   tourCard.innerHTML = `
     <a href="tour-detail.html?id=${tour.id}">
