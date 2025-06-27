@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+@import "tailwindcss";
+
+/* Preline UI */
+@source "../../node_modules/preline/dist/*.js";
+@import "../../node_modules/preline/variants.css";
+
+/* Plugins */
+@plugin "@tailwindcss/forms";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme{
+
+    --color-primary: #075dc1;
+    --color-secondary: #ff9f1d;
+    --color-ascent: #50bca3;
+}
+
+*{
+
+    font-family: "Montserrat", serif;
+}
+
+.abt-hero-section{
+
+    background: url("../../assets/img/aboutUs-hero-section.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dest-hero-section{
+
+    background: url("../../assets/img/destination-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#tour-hero-section{
+
+    background: url("../../assets/img/new-Bokor-Mountain.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#event-hero-section{
+
+    background: url("../../assets/img/beksloy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.hotel-section{
+
+    background: url("../../assets/img/hotel.jpg")
+
+}
+
+#event-detail-hero-section{
+
+    background: url("../../assets/img/beksloy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#text-1{
+
+    font-family: "Bubblegum Sans", serif;
+}
+
+#circle-tl{
+
+    animation: animation-tl 10s linear infinite alternate;
+}
+
+#circle-tr{
+
+    animation: animation-tr 25s linear infinite alternate;
+}
+
+#circle-bl{
+
+    animation: animation-bl 25s linear infinite alternate;
+}
+
+#circle-br{
+
+    animation: animation-br 10s linear infinite alternate;
+}
+
+
+@keyframes animation-tl{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(100%, -50%);
+    }
+}
+
+@keyframes animation-tr{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(-750%, 50%);
+    }
+}
+
+@keyframes animation-bl{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(-25%, -500%);
+    }
+}
+
+@keyframes animation-br{
+
+    0% {
+        transform: translate(0%, 0%);
+    }
+
+    100%{
+        transform: translate(100%, -50%);
+    }
+}
+
+
+#destination-1{
+
+    background: url("../../assets/img/siemreap-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#destination-2{
+
+    background: url("../../assets/img/battombong.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#destination-3{
+
+    background: url("../../assets/img/phnompenh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#destination-4{
+
+    background: url("../../assets/img/kampot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#destination-5{
+
+    background: url("../../assets/img/kep.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
