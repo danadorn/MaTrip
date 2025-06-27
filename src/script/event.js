@@ -34,20 +34,20 @@ let eventServices = eventCard.map(data => {
           <div class="flex gap-10 items-center">
             <div class="flex gap-3 items-center">
               <i class="fa-solid fa-calendar  text-ascent"></i>
-              <p>${data.date}</p>
+              <p class="dark:text-gray-200">${data.date}</p>
             </div>
             <div class="flex gap-3 items-center">
               <i class="fa-solid fa-location-dot text-ascent"></i>
-              <p>${data.location}</p>
+              <p class="dark:text-gray-200">${data.location}</p>
             </div>
           </div>
-          <h2 class="font-bold text-3xl mt-10 text-primary">${data.title}</h2>
+          <h2 class="font-bold text-3xl mt-10 text-primary dark:text-secondary">${data.title}</h2>
         </div>
         <div>
           <img class="w-80 rounded-2xl" src="${data.image}" alt="">
         </div>
         <div>
-          <p class="text-justify">${data.desc}</p>
+          <p class="text-justify dark:text-gray-200">${data.desc}</p>
           <a href="./event-detail.html?id=${data.id}">
             <div class="flex items-center gap-3 cursor-pointer mt-5">
               <button class="text-secondary font-bold cursor-pointer">Event Detail</button>

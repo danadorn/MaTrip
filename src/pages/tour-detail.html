@@ -19,8 +19,8 @@
     />
     <title>Tour Detail</title>
   </head>
-  <body>
-    <header id="start" class="bg-white dark:bg-black">
+  <body class="dark:bg-neutral-900">
+    <header id="start" class="bg-white dark:bg-neutral-900">
       <section
         class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99"
       >
@@ -142,17 +142,17 @@
     </header>
 
     <main  class="mt-20">
-      <section class="bg-gray-100 h-[90vh]">
+      <section class="h-[90vh] dark:bg-neutral-900">
         <div class="max-w-screen-xl container mx-auto">
-          <h1 id="tour-title" class="text-3xl font-bold text-primary my-10"></h1>
+          <h1 id="tour-title" class="text-3xl font-bold text-primary my-10 dark:text-secondary"></h1>
           <div class="flex items-center gap-10 my-10">
             <div class="flex items-center gap-3">
               <i class="fa-solid fa-location-dot text-ascent"></i>
-              <p>Kampung spue - Cambodia</p>
+              <p class="dark:text-gray-200">Kampung spue - Cambodia</p>
             </div>
             <div class="flex items-center gap-3">
               <i class="fa-solid fa-eye text-ascent"></i>
-              <p>213</p>
+              <p class="dark:text-gray-200">213</p>
             </div>
             <div>
               <i class="fa-solid fa-star text-yellow-300"></i>
@@ -185,33 +185,33 @@
           <div class="flex items-center gap-25 mt-10">
             <div>
               <div class="flex gap-3 items-center mt-5">
-                <i class="fa-solid fa-calendar text-primary text-3xl"></i>
-                <h3>Duration</h3>
+                <i class="fa-solid fa-calendar text-primary text-3xl dark:text-secondary"></i>
+                <h3 class="dark:text-gray-200">Duration</h3>
               </div>
-              <p class="ml-10 mt-3">3 Days</p>
+              <p class="ml-10 mt-3 dark:text-gray-200">3 Days</p>
             </div>
             <div>
               <div class="flex gap-3 items-center mt-5">
                 <i
-                  class="fa-solid fa-users-viewfinder text-primary text-3xl"
+                  class="fa-solid fa-users-viewfinder text-primary text-3xl dark:text-secondary"
                 ></i>
-                <h3>Duration</h3>
+                <h3 class="dark:text-gray-200">Max People</h3>
               </div>
-              <p class="ml-13 mt-3">20</p>
+              <p class="ml-13 mt-3 dark:text-gray-200">20</p>
             </div>
             <div>
               <div class="flex gap-3 items-center mt-5">
-                <i class="fa-solid fa-users-rays text-primary text-3xl"></i>
-                <h3>Duration</h3>
+                <i class="fa-solid fa-users-rays text-primary text-3xl dark:text-secondary"></i>
+                <h3 class="dark:text-gray-200">Min Age</h3>
               </div>
-              <p class="ml-13 mt-3">12+</p>
+              <p class="ml-13 mt- dark:text-gray-200">12+</p>
             </div>
             <div>
               <div class="flex gap-3 items-center mt-5">
-                <i class="fa-solid fa-bus text-primary text-3xl"></i>
-                <h3>Duration</h3>
+                <i class="fa-solid fa-bus text-primary text-3xl dark:text-secondary"></i>
+                <h3 class="dark:text-gray-200">PickUp</h3>
               </div>
-              <p class="ml-12 mt-3">Bus Station</p>
+              <p class="ml-12 mt-3 dark:text-gray-200">Bus Station</p>
             </div>
           </div>
         </div>
@@ -250,10 +250,10 @@
         <!-- Overview -->
         <div class=" mb-10">
           <article class="w-200">
-            <h2 class="text-3xl font-bold mb-5 text-primary">Overview</h2>
+            <h2 class="text-3xl font-bold mb-5 text-primary dark:text-secondary">Overview</h2>
             <p id="tour-description" class="mb-5 leading-7 text-justify"></p>
 
-            <p class="mb-5 leading-7 text-justify">
+            <p class="mb-5 leading-7 text-justify dark:text-gray-200">
               This 5-day, 4-night tour includes guided trekking through scenic
               trails, mountain biking, waterfall swimming, and evening campfires
               under the stars. With all camping equipment, meals, and
@@ -266,10 +266,10 @@
 
         <!-- Include / Exclude -->
         <div class="mb-10">
-          <h2 class="text-3xl font-bold mb-5 text-primary">
+          <h2 class="text-3xl font-bold mb-5 text-primary dark:text-secondary">
             What's Included / Excluded
           </h2>
-          <div class="grid grid-cols-1 gap-10">
+          <div class="grid grid-cols-1 gap-10 dark:text-gray-200">
             <div>
               <h3 class="text-xl font-semibold text-primary mb-3">Included</h3>
               <ul class="list-disc ml-6 leading-8 text-justify">
@@ -293,8 +293,8 @@
         </div>
 
         <!-- Tour Plan -->
-        <div class="mb-10">
-          <h2 class="text-3xl font-bold mb-5 text-primary">Tour Plan</h2>
+        <div class="mb-10 dark:text-gray-200">
+          <h2 class="text-3xl font-bold mb-5 text-primary dark:text-secondary">Tour Plan</h2>
           <ul class="list-decimal ml-6 leading-9 text-justify">
             <li>
               <strong>Day 1:</strong> Pick up from Phnom Penh → drive to Kirirom
@@ -321,7 +321,7 @@
 
         <!-- Tour Map -->
         <div class="mb-20">
-          <h2 class="text-3xl font-bold mb-5 text-primary">Map</h2>
+          <h2 class="text-3xl font-bold mb-5 text-primary dark:text-secondary">Map</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9296.956198570719!2d104.90438131246918!3d11.559845256552347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310928256ebe44a9%3A0x468315122092d785!2sKampong%20Speu%20Province!5e0!3m2!1sen!2skh!4v1750953737132!5m2!1sen!2skh"
             width="600"
@@ -344,7 +344,7 @@
             <div class="col-span-1 flex flex-col gap-4">
               <!-- Price display -->
               <div class="mb-2">
-                <h2 class="text-3xl font-bold text-primary">$42.00</h2>
+                <h2 class="text-3xl font-bold text-primary ">$42.00</h2>
                 <h3 class="text-lg text-gray-400 line-through">$49.00</h3>
               </div>
 
@@ -400,13 +400,13 @@
         </div>
 
         <div class="max-w-screen-xl container mx-auto">
-          <h2 class="text-3xl text-primary font-bold my-20">You May Like</h2>
+          <h2 class="text-3xl text-primary font-bold my-20 dark:text-secondary">You May Like</h2>
           <div id="top-tour" class="grid grid-cols-4 gap-10"></div>
         </div>
     </main>
 
     <footer
-      class="bg-primary text-white mt-20 h-[60vh]"
+      class="bg-primary text-white mt-20 h-[60vh] dark:bg-black"
       data-aos="fade-up"
       data-aos-delay="300"
     >
