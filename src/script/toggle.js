@@ -62,3 +62,23 @@ document.addEventListener('DOMContentLoaded', () => {
         setHeaderVisibility();
     }
 });
+
+document.querySelectorAll('[data-hs-theme-click-value]').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const html = document.documentElement;
+    if (this.getAttribute('data-hs-theme-click-value') === 'dark') {
+      html.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      html.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+});
+
+// Apply saved theme on page load
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.classList.add('dark');
+} else if (localStorage.getItem('theme') === 'light') {
+  document.documentElement.classList.remove('dark');
+}
