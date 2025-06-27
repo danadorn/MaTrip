@@ -1,57 +1,35 @@
-const topTour = [
+// top-tour.js
 
-  {image: '../../assets/img/home-img-1.png',
-   title: 'Angkor Wat, Siem Reap  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
+const topTourContainer = document.getElementById('top-tour');
 
-  {image: '../../assets/img/home-img-2.png',
-   title: 'Kirirom, Kampung Spue  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
+// Show top 4 tours (you can adjust logic as needed)
+const topTours = tourData.slice(0, 4);
 
-  {
-   image: '../../assets/img/home-img-3.png',
-   title: 'Seahorse, Kampot  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  },
+topTours.forEach(tour => {
+  const tourCard = document.createElement('div');
+  tourCard.className = 'bg-white shadow-lg rounded-lg overflow-hidden hover:scale-110 duration-300';
 
-    {
-   image: '../../assets/img/home-img-4.png',
-   title: 'Koh Rong, Sihaknukvill  - 5days  4 Nights',
-   desc: 'Teuk thla, Toul Kork, Phom Penh' 
-  }
-]
-
-let topTourServices = topTour.map(
-(data, idx) => {
-    return `
-    <div class="border-1 border-gray-300 w-70 h-95 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer"
-         data-aos="fade-up"
-         data-aos-anchor-placement="top-center"
-         data-aos-delay="${100 + idx * 100}">
+  tourCard.innerHTML = `
+  <a href="tour-detail.html?id=${tour.id}">
+    <div data-aos="fade-down" data-aos-delay="500" class="border-1 border-gray-300 w-70 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer h-100">
       <img 
       class="rounded-t-2xl"
-      src="${data.image}">
+      src="${tour.image}">
       <div class="p-5">
-        <h3 class="font-bold text-lg">${data.title}</h3>
-      <p class="text-sm my-2">${data.desc}</p>
-      <div>
-        <i class="fa-solid fa-star text-yellow-300"></i>
-        <i class="fa-solid fa-star text-yellow-300"></i>
-        <i class="fa-solid fa-star text-yellow-300"></i>
-        <i class="fa-solid fa-star text-yellow-300"></i>
-        <i class="fa-solid fa-star text-yellow-300"></i>
-      </div>
-      <div class="flex justify-between items-center my-3">
-        <p>$99.99</p>
-      <p class="decoration-1 line-through opacity-50">$129.99</p>
-      <button class="border-1 border-[#2671c9] p-[0.3rem_0.3rem] rounded-md cursor-pointer">Explore</button>
-      </div>
+        <h3 class="font-bold text-lg">${tour.title}</h3>
+      <p class="text-sm my-2">${tour.desc}</p>
+      <div class="text-yellow-300">${createStarsHTML(tour.stars)}</div>
+      <div class="flex gap-5 items-center my-3">
+        <p>$${tour.price}</p>
+        <p class="decoration-1 line-through opacity-50">$${tour.oldPrice}</p>
       </div>
     </div>
-    `;
-}
-);
+    </a>
+  `;
 
-document.getElementById("top-tour").innerHTML = topTourServices.join('');
+  topTourContainer.appendChild(tourCard);
+});
+
+function createStarsHTML(count) {
+  return Array(5).fill('<i class="fa-solid fa-star mr-2"></i>').join('');
+}
