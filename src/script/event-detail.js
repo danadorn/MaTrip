@@ -91,9 +91,9 @@ if (data) {
 } else {
   document.body.innerHTML = `
     <div class="h-screen flex flex-col justify-center items-center text-center px-6">
-      <h1 class="text-4xl font-bold text-red-600 mb-4">Event Not Found</h1>
+      <h1 class="text-7xl font-bold text-secondary mb-4">Event Not Found</h1>
       <p class="text-lg mb-6">The event you're looking for doesn't exist.</p>
-      <a href="./event.html" class="text-blue-600 underline">← Back to all events</a>
+      <a href="./event.html" class="text-white font-semibold rounded-2xl p-[1rem_1rem] bg-primary"> Back to all events</a>
     </div>
   `;
 }
