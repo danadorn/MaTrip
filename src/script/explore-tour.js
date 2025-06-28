@@ -10,7 +10,7 @@ exploreTours.forEach((tour) => {
 
   tourCard.innerHTML = `
     <a href="tour-detail.html?id=${tour.id}">
-      <div data-aos="fade-up" data-aos-delay="500" class="border-1 border-gray-300 w-70 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer h-100">
+      <div data-aos="fade-up" data-aos-delay="500" class="border-1 border-gray-300 w-70 rounded-2xl shadow-xl cursor-pointer h-100">
         <img class="rounded-t-2xl" src="${tour.image}">
         <div class="p-5">
           <h3 class="font-bold text-lg">${tour.title}</h3>

@@ -32,7 +32,7 @@ const recHotel = [
 let recHotelService = recHotel.map(
   (data, idx) => {
     return `
-  <div class="border-1 border-gray-300 rounded-2xl w-70 shadow-2xl shadow-gray-400" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="${100 + idx * 100}">
+  <div class="border-1 border-gray-300 rounded-2xl w-70 shadow-2xl" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-delay="${100 + idx * 100}">
                 <img 
                 class="w-70 rounded-t-2xl"
                 src="${data.image}" alt="">

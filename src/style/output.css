@@ -16,16 +16,13 @@
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-green-600: oklch(62.7% 0.194 149.214);
-    --color-emerald-300: oklch(84.5% 0.143 164.978);
-    --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
-    --color-emerald-600: oklch(59.6% 0.145 163.225);
-    --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-blue-900: oklch(37.9% 0.146 265.522);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -52,7 +49,6 @@
     --container-lg: 32rem;
     --container-xl: 36rem;
     --container-2xl: 42rem;
-    --container-6xl: 72rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
@@ -3241,7 +3237,7 @@
   background-attachment: fixed;
 }
 #event-hero-section {
-  background: url("../../assets/img/beksloy.gif");
+  background: url("../../assets/img/event.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3251,7 +3247,7 @@
   background: url("../../assets/img/hotel.jpg");
 }
 #event-detail-hero-section {
-  background: url("../../assets/img/beksloy.gif");
+  background: url("../../assets/img/Water-Festival.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
