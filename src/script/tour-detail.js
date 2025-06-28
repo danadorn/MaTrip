@@ -15,9 +15,9 @@ const tourData = [
     ageLimit: '12+',
     transport: 'Bus from Phnom Penh',
     gallery: [
-      '../../assets/img/tour-galary-1.jpg',
-      '../../assets/img/tour-galary-2.jpg',
-      '../../assets/img/tour-galary-3.jpg'
+      '../../assets/img/tour-gallery-1.jpg',
+      '../../assets/img/tour-gallery-2.jpg',
+      '../../assets/img/tour-gallery-3.jpg'
     ],
     overview: `
       <p class="mb-5 leading-7 text-justify">
