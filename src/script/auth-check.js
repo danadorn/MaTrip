@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
       `;
     } else {
       actionBtn.innerHTML = `
-        <a href="./src/pages/user-login.html">
+        <a href="../pages/user-login.html">
           <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
             Log In
           </button>
