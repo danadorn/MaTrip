@@ -12,7 +12,7 @@
   <body class="dark:bg-neutral-900">
     <header id="start" class="bg-white dark:bg-black">
       <section class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99">
-          <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-2 w-[0%] z-999"></div>
+          <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-[5px] w-[0%] z-999"></div>
           <nav class="container z-10 flex justify-between items-center h-20 max-w-screen-xl mx-auto px-4 lg:px-0">
               <div class="flex-shrink-0">
                   <a href="./index.html">
@@ -63,11 +63,13 @@
                           </svg>
                       </span>
                   </button>
-                  <a href="./src/pages/user-login.html">
-                    <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                  <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
                       Log In
-                  </button>
-                  </a>
+                    </button>
+                    </a>    
+                </div>
               </div>
           </nav>
       </section>
@@ -108,9 +110,13 @@
                           </svg>
                       </span>
                   </button>
-                  <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
+                <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
                       Log In
-                  </button>
+                    </button>
+                    </a>    
+                </div>
               </div>
           </div>
       </div>
@@ -408,6 +414,47 @@
             </div>
         </div>
     </footer>
+
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const actionBtn = document.getElementById('user-action-button');
+    const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+
+    if (isLoggedIn && actionBtn) {
+      // Show user profile button
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-account.html" class="flex items-center space-x-2">
+          <img src="./assets/img/cholna-2.png" alt="User Profile" class="w-15 rounded-full border-2 border-primary shadow-md" />
+        </a>
+      `;
+    } else if (actionBtn) {
+      // Show login button
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-login.html">
+                    <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                      Log In
+                  </button>
+                  </a>
+      `;
+    }  
+  });
+
+  // Optional: helper function to handle logout on your main page if needed
+  function handleLogout() {
+    localStorage.removeItem('loggedIn');
+    // Refresh or update the button immediately after logout if you want
+    const actionBtn = document.getElementById('user-action-button');
+    if (actionBtn) {
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-login.html">
+                    <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                      Log In
+                  </button>
+                  </a>
+      `;
+    }
+  }
+</script>
 
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

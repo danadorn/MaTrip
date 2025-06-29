@@ -155,11 +155,13 @@
                 </svg>
               </span>
             </button>
-            <button
-              class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer"
-            >
-              Log In
-            </button>
+            <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
+                      Log In
+                    </button>
+                    </a>    
+                </div>
           </div>
         </nav>
       </section>
@@ -254,11 +256,13 @@
                 </svg>
               </span>
             </button>
-            <button
-              class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit"
-            >
-              Log In
-            </button>
+            <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
+                      Log In
+                    </button>
+                    </a>    
+                </div>
           </div>
         </div>
       </div>
@@ -300,7 +304,7 @@
             id="tour-images"
             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-10 justify-items-center"
           >
-            <img
+            <!-- <img
               class="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl"
               src="../../assets/img/tour-galary-1.jpg"
               alt=""
@@ -314,7 +318,7 @@
               class="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl"
               src="../../assets/img/tour-galary-3.jpg"
               alt=""
-            />
+            /> -->
           </div>
 
           <div
@@ -575,7 +579,7 @@
         </form>
       </div>
 
-      <div class="max-w-screen-xl container mx-auto px-2 sm:px-4 md:px-6">
+      <!-- <div class="max-w-screen-xl container mx-auto px-2 sm:px-4 md:px-6">
         <h2
           class="text-2xl md:text-3xl text-primary font-bold my-8 md:my-20 text-center md:text-left"
         >
@@ -583,9 +587,12 @@
         </h2>
         <div
           id="top-tour"
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-10"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-10"
         ></div>
-      </div>
+        <div id="tagContainer">
+
+        </div>
+      </div> -->
     </main>
 
     <footer class="bg-primary text-white mt-10 md:mt-20">
@@ -739,9 +746,11 @@
     });
   </script>
   <script src="../script/scroll-progress.js"></script>
+  <script type="module" src="../script/tour-detail.js"></script>
+  <script src="../script/tour-data.js"></script>
   <script type="module" src="../script/top-tour.js"></script>
   <script src="../script/explore-tour.js"></script>
-  <script src="../script/recommend-place.js"></script>
-  <script src="../script/tour-detail.js"></script>
   <script src="../script/toggle.js"></script>
+  <script src="../script/auth-check.js"></script>
+  <script src="../script/recommend-place.js"></script>
 </html>

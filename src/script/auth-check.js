@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (isLoggedIn) {
       actionBtn.innerHTML = `
         <a href="../pages/user-account.html">
-          <img src="../../assets/img/cholna.png" alt="Profile" class=" rounded-full border-2 border-primary shadow-md" />
+          <img src="../../assets/img/cholna-2.png" alt="Profile" class="w-15 rounded-full border-2 border-primary shadow-md" />
         </a>
       `;
     } else {

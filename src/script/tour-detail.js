@@ -15,9 +15,9 @@ const tourData = [
     ageLimit: '12+',
     transport: 'Bus from Phnom Penh',
     gallery: [
-      '../../assets/img/tour-gallery-1.jpg',
-      '../../assets/img/tour-gallery-2.jpg',
-      '../../assets/img/tour-gallery-3.jpg'
+      '../../assets/img/galary-6.png',
+      '../../assets/img/Cambodia-Festivals-Meak-Bochea-2.jpg',
+      '../../assets/img/demo.jpg'
     ],
     overview: `
       <p class="mb-5 leading-7 text-justify">
@@ -239,7 +239,7 @@ function renderTourDetail() {
       <i class="fa-regular fa-heart text-red-500"></i>
     </div>
 
-    <div class="flex gap-10 my-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-10 justify-items-center w-full">
       ${tour.gallery.map(src => `<img class="w-100 rounded" src="${src}" alt="gallery" />`).join("")}
     </div>
 
