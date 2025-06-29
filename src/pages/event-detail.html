@@ -15,8 +15,7 @@
     />
     <title>Event detail</title>
 </head>
-<body>
-    
+<body class="dark:bg-neutral-900">
     <header id="start" class="bg-white dark:bg-black">
       <section class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99">
         <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-2 w-[0%] z-999"></div>
@@ -89,8 +88,6 @@
     </svg>
   </span>
 </button>
-
-
             <button
               class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer"
             >
@@ -116,24 +113,23 @@
               <div class="flex gap-10 items-center">
                 <div data-aos="fade-down" class="flex gap-3 items-center">
                   <i class="fa-solid fa-calendar text-ascent"></i>
-                  <p id="eventDate">14 to 16 - April - 2025</p>
+                  <p id="eventDate" class="dark:text-gray-200">14 to 16 - April - 2025</p>
                 </div>
                 <div data-aos="fade-down" class="flex gap-3 items-center">
                   <i class="fa-solid fa-location-dot text-ascent"></i>
-                  <p id="eventLocation">Siem Reap - Cambodia</p>
+                  <p id="eventLocation" class="dark:text-gray-200">Siem Reap - Cambodia</p>
                 </div>
               </div>
-              <h1 id="eventTitle" data-aos="fade-right" data-aos-delay="100" class="text-5xl font-bold text-primary my-10">Angkor Sankranta</h1>
-              
+              <h1 id="eventTitle" data-aos="fade-right" data-aos-delay="100" class="text-5xl font-bold text-primary my-10 dark:text-secondary">Angkor Sankranta</h1>
               <article>
-                <p id="eventDescription" data-aos="fade-up" class="mb-10 leading-8 text-justify">Angkor Sankranta 2025 is a vibrant New Year celebration held in Siem Reap, Cambodia, during Khmer New Year. In 2025, it brings together locals and tourists with traditional games, cultural performances, food fairs, and art displays set around the iconic Angkor Wat. The event highlights Khmer heritage and community spirit in a festive, family-friendly atmosphere.</p>
+                <p id="eventDescription" data-aos="fade-up" class="mb-10 leading-8 text-justify dark:text-gray-200">Angkor Sankranta 2025 is a vibrant New Year celebration held in Siem Reap, Cambodia, during Khmer New Year. In 2025, it brings together locals and tourists with traditional games, cultural performances, food fairs, and art displays set around the iconic Angkor Wat. The event highlights Khmer heritage and community spirit in a festive, family-friendly atmosphere.</p>
 
                 <img data-aos="fade-up" src="../../assets/img/event-1.png" alt="">
 
                 <h2 data-aos="fade-right" class="mt-10 text-3xl text-secondary font-bold mb-10">Across Six Venues</h2>
                 <div>
-                  <p data-aos="fade-left" class="leading-10 text-justify">At key locations like Angkor Wat, Royal Garden, Siem Reap River, King's Road, Pub Street, and Angkor-Gyeongju:</p>
-                  <ul>
+                  <p data-aos="fade-left" class="leading-10 text-justify dark:text-gray-200">At key locations like Angkor Wat, Royal Garden, Siem Reap River, King's Road, Pub Street, and Angkor-Gyeongju:</p>
+                  <ul class="dark:text-gray-200">
                     <li data-aos="fade-up" data-aos-delay="100" class="list-disc ml-10 leading-10">Angkor Heartbeat theatrical show</li>
                     <li data-aos="fade-up" data-aos-delay="200" class="list-disc ml-10 leading-10">My Village cultural exhibition</li>
                     <li data-aos="fade-up" data-aos-delay="300" class="list-disc ml-10 leading-10">Khmer chess tournaments (Ok Chaktrang)</li>
@@ -153,23 +149,23 @@
 
 
             <div class=" w-100 px-5">
-              <div class="border-1 border-gray-300 p-5 rounded-2xl shadow-2xl shadow-gray-400">
-                <h2 class="text-2xl font-bold text-primary mt-5 mb-8 text-center">Event Infomation</h2>
+              <div class="border-1 border-gray-300 p-5 rounded-2xl shadow-2xl">
+                <h2 class="text-2xl font-bold text-primary mt-5 mb-8 text-center dark:text-secondary">Event Infomation</h2>
               <div class="flex justify-between pb-3 mb-7 border-b-1 border-gray-200">
-                <p>Ticket Price</p>
-                <p id="eventPrice">$45</p>
+                <p class="dark:text-gray-200">Ticket Price</p>
+                <p id="eventPrice" class="dark:text-gray-200">$45</p>
               </div>
               <div class="flex justify-between pb-3 mb-7 border-b-1 border-gray-200">
-                <p>Total Ticket</p>
-                <p id="eventTicket">300</p>
+                <p class="dark:text-gray-200">Total Ticket</p>
+                <p id="eventTicket" class="dark:text-gray-200">300</p>
               </div>
               <div class="flex justify-between pb-3 mb-7 border-b-1 border-gray-200">
-                <p>Start Date</p>
-                <p id="eventStartDate">14 April 2025</p>
+                <p class="dark:text-gray-200">Start Date</p>
+                <p id="eventStartDate" class="dark:text-gray-200">14 April 2025</p>
               </div>
               <div class="flex justify-between pb-3 mb-7 border-b-1 border-gray-200">
-                <p>Location</p>
-                <p id="eventLocationSidebar">Siem Reap - Cambodia</p>
+                <p class="dark:text-gray-200">Location</p>
+                <p id="eventLocationSidebar" class="dark:text-gray-200">Siem Reap - Cambodia</p>
               </div>
               <a href="">
                 <button class="text-lg font-semibold text-white bg-secondary rounded-xl p-[0.8rem_1rem] cursor-pointer mb-5 hover:scale-110 hover:bg-amber-600/90 transition duration-500">Book Your Seat</button>
@@ -209,7 +205,7 @@
     </main>
 
     <footer
-      class="bg-primary text-white mt-20 h-[60vh]"
+      class="bg-primary text-white mt-20 h-[60vh] dark:bg-black"
       data-aos="fade-up"
       data-aos-delay="300"
     >

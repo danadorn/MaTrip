@@ -7,11 +7,11 @@ const topTours = tourData.slice(0, 4);
 
 topTours.forEach(tour => {
   const tourCard = document.createElement('div');
-  tourCard.className = 'bg-white shadow-lg rounded-lg overflow-hidden hover:scale-110 duration-300';
+  tourCard.className = 'shadow-lg rounded-xl overflow-hidden hover:scale-110 duration-300';
 
   tourCard.innerHTML = `
-  <a href="tour-detail.html?id=${tour.id}">
-    <div data-aos="fade-down" data-aos-delay="500" class="border-1 border-gray-300 w-70 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer h-100">
+  <a href="tour-detail.html?id=${tour.id}"> 
+    <div data-aos="fade-down" data-aos-delay="500" class="border-1 border-gray-300 w-70 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer h-100  ">
       <img 
       class="rounded-t-2xl"
       src="${tour.image}">
