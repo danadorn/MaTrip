@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hotel Detail</title>
+  <link rel="stylesheet" href="../style/input.css" />
+  <link rel="stylesheet" href="../style/output.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-white dark:bg-black text-black dark:text-white">
+
+  <header class="bg-primary text-white p-5 text-center text-3xl font-bold">
+    Hotel Detail Page
+  </header>
+
+  <main class="max-w-screen-xl mx-auto p-10">
+    <!-- Dynamic content will be inserted here -->
+    <div id="hotel-detail" class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Left side: images & description -->
+      <div>
+        <img id="hotelImage" class="rounded-xl w-full" src="" alt="Hotel image"/>
+        <h1 id="hotelName" class="text-4xl font-bold mt-5 mb-2"></h1>
+        <p id="hotelLocation" class="text-xl text-gray-500 mb-4"></p>
+        <p id="hotelDescription" class="text-justify leading-7"></p>
+      </div>
+
+      <!-- Right side: booking info -->
+      <div class="bg-gray-100 dark:bg-neutral-800 p-8 rounded-2xl shadow-lg">
+        <h2 class="text-2xl font-bold mb-5 text-primary">Booking Information</h2>
+        <p class="mb-2"><strong>Price per night:</strong> $<span id="hotelPrice"></span></p>
+        <p class="mb-5"><strong>Available rooms:</strong> <span id="hotelRooms"></span></p>
+        <button class="bg-secondary text-white font-semibold px-6 py-3 rounded-xl hover:bg-yellow-600 transition duration-300">Book Now</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-primary text-white text-center py-10 mt-20">
+    &copy; 2025 MaTrip.com - Hotel Service
+  </footer>
+
+  <script src="../script/hotel-detail.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

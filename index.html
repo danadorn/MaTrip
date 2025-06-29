@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
     <title>Home</title>
   </head>
-  <body class="dark:bg-black bg-whitesmoke">
+  <body class="dark:bg-neutral-900">
     <header id="start" class="bg-white dark:bg-black">
       <section class="fixed top-0 left-0 w-full bg-white/70 dark:bg-black/80 dark:border-neutral-500 backdrop-blur-2xl border-b-1 border-neutral-300 z-99">
-          <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-2 w-[0%] z-999"></div>
+          <div id="scrollBar" class="absolute top-0 left-0 bg-primary h-[5px] w-[0%] z-999"></div>
           <nav class="container z-10 flex justify-between items-center h-20 max-w-screen-xl mx-auto px-4 lg:px-0">
               <div class="flex-shrink-0">
                   <a href="./index.html">
@@ -32,7 +32,7 @@
                       <a href="./src/pages/destination.html">
                           <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">Destination</h2>
                       </a>
-                      <a href="./src/pages/event.html">
+                      <a href="./src/pages/tour.html">
                           <h2 class="transition duration-500 hover:scale-110 hover:underline hover:underline-offset-2 hover:duration-500">Event</h2>
                       </a>
                       <a href="./src/pages/about.html">
@@ -63,9 +63,13 @@
                           </svg>
                       </span>
                   </button>
-                  <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                  <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
                       Log In
-                  </button>
+                    </button>
+                    </a>    
+                </div>
               </div>
           </nav>
       </section>
@@ -106,9 +110,13 @@
                           </svg>
                       </span>
                   </button>
-                  <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
+                <div id="user-action-button">
+                    <a href="./src/pages/user-login.html">
+                        <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer w-fit">
                       Log In
-                  </button>
+                    </button>
+                    </a>    
+                </div>
               </div>
           </div>
       </div>
@@ -149,7 +157,7 @@
                   <h1 class="my-6 md:my-10 font-bold text-4xl md:text-6xl lg:text-7xl text-primary">
                       Discover the most engaging place
                   </h1>
-                  <h5 class="md:text-lg text-gray-500 max-w-full md:max-w-md md:mx-auto lg:mx-0">
+                  <h5 class="md:text-lg text-gray-500 max-w-full md:max-w-md md:mx-auto lg:mx-0 dark:text-gray-200">
                       Less planning, 50,000 trips are ready for you.
                   </h5>
               </div>
@@ -162,19 +170,19 @@
 
       <section id="section-2" class="max-w-screen-xl container mx-auto mt-16 md:mt-20 px-4 md:px-6 lg:px-0 py-8 md:py-12">
           <div data-aos="fade-right" data-aos-delay="100" class="text-center md:text-center lg:text-left">
-              <h2 class="text-2xl md:text-3xl font-bold text-primary">Discover Weekly</h2>
-              <h3 class="mt-3 mb-8 text-base md:text-lg max-w-full md:max-w-xl mx-auto lg:mx-0 ">
+              <h2 class="text-2xl md:text-3xl font-bold text-primary dark:text-secondary">Discover Weekly</h2>
+              <h3 class="mt-3 mb-8 text-base md:text-lg max-w-full md:max-w-xl mx-auto lg:mx-0 dark:text-gray-200">
                   Let MaTrip inspire your next adventure with fresh travel content,
                   hidden gems, and smart tips to make the most of your journey.
               </h3>
           </div>
-          <div id="card-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 justify-items-center">
+          <div id="card-1" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 justify-items-center dark:text-gray-200">
           </div>
       </section>
 
       <section class="container max-w-screen-xl mx-auto mt-24 md:mt-32 px-4 md:px-6 lg:px-0 py-8 md:py-12" data-aos="fade-up">
-        <div data-aos="fade-up" data-aos-delay="100">
-            <h2 class="mb-8 md:mb-10 text-2xl md:text-5xl lg:text-3xl font-bold text-primary text-center md:text-center lg:text-left" data-aos="fade-right">Next Destination</h2>
+        <div data-aos="fade-up" data-aos-delay="30">
+            <h2 class="mb-8 md:mb-10 text-2xl md:text-5xl lg:text-3xl font-bold text-primary text-center md:text-center lg:text-left dark:text-secondary" data-aos="fade-right">Next Destination</h2>
         </div>
         <div class="md:flex md:justify-center">
             <div class="container w-full h-auto min-h-[600px] md:min-h-[700px] lg:min-h-[800px] 
@@ -202,9 +210,9 @@
 
       <section class="container z-50 max-w-screen-xl mx-auto px-4 md:px-6 lg:px-0 py-8 md:py-12" data-aos="fade-up">
         <div data-aos="fade-up" data-aos-delay="100">
-            <h2 class="my-10 md:my-16 text-2xl md:text-3xl font-bold text-primary text-center md:text-center lg:text-left" data-aos="fade-right">Travel Services</h2>
+            <h2 class="my-10 md:my-16 text-2xl md:text-3xl font-bold text-primary text-center md:text-center lg:text-left dark:text-secondary" data-aos="fade-right">Travel Services</h2>
         </div>
-        <div id="card-2" class="z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-20  bg-white justify-items-center md:justify-center">
+        <div id="card-2" class="z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 lg:gap-20 justify-items-center md:justify-center dark:text-gray-200">
         </div>
       </section>
 
@@ -228,43 +236,42 @@
               data-aos-delay="200"
           ></div>
 
-          <div class="mb-10 md:mb-16 text-center" data-aos="zoom-in" data-aos-delay="400">
-              <h2 class="mt-10 md:mt-20 mb-4 md:mb-5 text-2xl md:text-3xl font-bold text-primary" data-aos="zoom-in" data-aos-delay="200">Find Travel Perfection</h2>
-              <p class="w-full max-w-sm md:max-w-lg mx-auto text-base md:text-lg leading-relaxed">
+          <div class="mb-10 md:mb-16 text-center" data-aos="zoom-in"  data-aos-delay="100">
+              <h2 class="mt-10 md:mt-20 mb-4 md:mb-5 text-2xl md:text-3xl font-bold text-primary dark:text-secondary " data-aos="zoom-in" data-aos-delay="100">Find Travel Perfection</h2>
+              <p class="w-full max-w-sm md:max-w-lg mx-auto text-base md:text-lg leading-relaxed dark:text-gray-200">
                   At MaTrip, we help you discover the perfect trip carefully planned, beautifully simple, and made just for you. No stress, just smooth journeys and unforgettable memories.
               </p>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 md:gap-10">
-              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="200">
+              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="100">
                   <div class="relative my-4">
                       <img class="mx-auto" src="./assets/img/star-1.png" alt="" />
                       <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./assets/img/vector-1.png" alt="" />
                   </div>
                   <h3 class="px-2 text-xl font-bold">Tell us what you want to do</h3>
-                  <p class="p-4 font-light text-justify text-sm">
-                      we want to help travelers explore the world easily and enjoy unforgettable experiences. Our goal is to provide the best travel guides, tips.
+                  <p class="p-4 font-light text-justify text-sm ">
+                      We want to help travelers explore the world easily and enjoy unforgettable experiences. Our goal is to provide the best travel guides, tips.
                   </p>
               </div>
 
-              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="300">
+              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="100">
                   <div class="relative my-4">
                       <img class="mx-auto" src="./assets/img/star-2.png" alt="" />
                       <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./assets/img/vector-2.png" alt="" />
                   </div>
                   <h3 class="px-2 text-xl font-bold">Tell us what you want to do</h3>
                   <p class="p-4 font-light text-justify text-sm">
-                      we want to help travelers explore the world easily and enjoy unforgettable experiences. Our goal is to provide the best travel guides, tips.
-                  </p>
+                      Tell us about your travel preferences - what kind of trips do you enjoy? Advanture, relaxation, culture, food, or something else?
               </div>
 
-              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="400">
+              <div class="z-10 bg-white border border-gray-300 shadow-xl rounded-2xl w-full h-auto min-h-[250px] p-6 text-center flex flex-col items-center justify-center" data-aos="flip-up" data-aos-delay="100">
                   <div class="relative my-4">
                       <img class="mx-auto" src="./assets/img/star-3.png" alt="" />
                       <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./assets/img/vector-3.png" alt="" />
                   </div>
                   <h3 class="px-2 text-xl font-bold">Tell us what you want to do</h3>
                   <p class="p-4 font-light text-justify text-sm">
-                      we want to help travelers explore the world easily and enjoy unforgettable experiences. Our goal is to provide the best travel guides, tips.
+                      We aim to make every journey enjoybale and unforgettable by guiding to you to the best experiences...
                   </p>
               </div>
           </div>
@@ -297,7 +304,7 @@
 
       <section class="container max-w-screen-xl mx-auto px-4 md:px-6 lg:px-0 py-8 md:py-12">
           <div>
-              <h2 class="mb-10 md:mb-16 text-2xl md:text-3xl font-bold text-center text-primary" data-aos="zoom-in" data-aos-delay="100">What our happy clients say</h2>
+              <h2 class="mb-10 md:mb-16 text-2xl md:text-3xl font-bold text-center text-primary dark:text-secondary" data-aos="zoom-in" data-aos-delay="100">What our happy clients say</h2>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10" data-aos="fade-up" data-aos-delay="100">
               <div class="w-full rounded-2xl border border-gray-200 shadow-md p-6 flex flex-col items-start" data-aos="flip-up" data-aos-delay="100">
@@ -318,7 +325,7 @@
                   </div>
               </div>
 
-              <div class="w-full rounded-2xl border border-gray-200 shadow-md p-6 flex flex-col items-start" data-aos="flip-up" data-aos-delay="300">
+              <div class="w-full rounded-2xl border border-gray-200 shadow-md p-6 flex flex-col items-start" data-aos="flip-up" data-aos-delay="100">
                   <div class="mb-3">
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                       <i class="text-yellow-400 fa-solid fa-star"></i>
@@ -326,7 +333,7 @@
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                   </div>
-                  <p class="mb-4 text-sm md:text-base text-gray-700 dark:text-gray-300">MaTrip made my vacation effortless and unforgettable! The team handled everything with care from booking to recommendations. I'll definitely travel with them again!</p>
+                  <p class="mb-4 text-sm md:text-base text-gray-700 dark:text-gray-300">If you want a smooth, well-organized trip, go with MaTrip. Their support team was always available, and the places they suggested were absolutely amazing!</p>
                   <div class="flex gap-4 items-center mt-auto">
                       <img class="size-12 rounded-full object-cover" src="./assets/img/cholna.png" alt="profile" />
                       <div>
@@ -336,7 +343,7 @@
                   </div>
               </div>
 
-              <div class="w-full rounded-2xl border border-gray-200 shadow-md p-6 flex flex-col items-start" data-aos="flip-up" data-aos-delay="500">
+              <div class="w-full rounded-2xl border border-gray-200 shadow-md p-6 flex flex-col items-start" data-aos="flip-up" data-aos-delay="200">
                   <div class="mb-3">
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                       <i class="text-yellow-400 fa-solid fa-star"></i>
@@ -344,7 +351,7 @@
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                       <i class="text-yellow-400 fa-solid fa-star"></i>
                   </div>
-                  <p class="mb-4 text-sm md:text-base text-gray-700 dark:text-gray-300">MaTrip made my vacation effortless and unforgettable! The team handled everything with care from booking to recommendations. I'll definitely travel with them again!</p>
+                  <p class="mb-4 text-sm md:text-base text-gray-700 dark:text-gray-300"> I love how MaTrip took the stress out of planning. Great communication, clear itinerary, and zero hidden costs. Highly recommended for anyone who loves to travel!</p>
                   <div class="flex gap-4 items-center mt-auto">
                       <img class="size-12 rounded-full object-cover" src="./assets/img/cholna.png" alt="profile" />
                       <div>
@@ -357,51 +364,97 @@
       </section>
     </main>
     
-    <footer class="bg-primary text-white mt-20 h-[60vh]" data-aos="fade-up" data-aos-delay="300">
-      <section class="border-gray-400 border-b-1">
-        <div class="container grid items-center h-full max-w-screen-xl grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mx-auto">
-        <div class="h-full mt-25">
-          <a href="index.html">
-            <img 
-              width="250"
-              src="./assets/img/logo.png" 
-              alt=""
-              data-aos="fade-down">
-          </a>
+    <footer class="bg-primary text-white mt-20">
+        <section class="border-gray-400 border-b">
+            <div class="container max-w-screen-xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-12 sm:gap-x-8 lg:gap-x-12 md:justify-itcenter items-start">
+
+                    <div class="flex justify-center sm:justify-start items-center">
+                        <a href="index.html">
+                            <img width="180" src="./assets/img/logo.png" alt="MaTrip Logo">
+                        </a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">Support</h2>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Customer Support</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Privacy & Policy</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./index.html#start">Contact Channels</a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">About Us</h2>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./src/pages/about.html">Our Story</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./src/pages/about.html">Travel Blog & Tips</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./src/pages/about.html#contact">Working with Us</a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="./src/pages/about.html#team">Be Our Partner</a>
+                    </div>
+
+                    <div class="text-center sm:text-left mt-8 sm:mt-0">
+                        <h2 class="mb-4 text-xl font-bold text-secondary">Contact Info</h2>
+                        <p class="mb-4 font-light">135 Kampuchea Krom, Teuk Thla, Toul Kork, Phnom Penh, Cambodia</p>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="mailto:MaTrip12@gmail.com">
+                            <i class="mr-3 fa-solid fa-envelope text-secondary"></i>MaTrip12@gmail.com
+                        </a>
+                        <a class="block mt-2 font-light hover:font-bold hover:underline transition duration-300" href="tel:+85512345678">
+                            <i class="mr-3 fa-solid fa-phone-volume text-secondary"></i>+855 12345678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto py-5 px-4 sm:px-6 lg:px-8 text-center md:text-left">
+            <p class="text-sm font-light mb-4 md:mb-0">© Copyright 2025 by Matrip.com</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <img class="h-6 sm:h-8" src="./assets/img/visa.png" alt="Visa">
+                <img class="h-6 sm:h-8" src="./assets/img/aba.png" alt="ABA">
+                <img class="h-6 sm:h-8" src="./assets/img/acleda.png" alt="ACLEDA">
+                <img class="h-6 sm:h-8" src="./assets/img/paypal.png" alt="PayPal">
+            </div>
         </div>
-        <div data-aos="fade-right" data-aos-delay="200" class="h-full mt-30">
-          <h2 class="mb-5 text-xl font-bold text-secondary">Support</h2>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Customer Support</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Privacy & Policy</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Contact Channels</a>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="400" class="h-full mt-30">
-          <h2 class="mb-5 text-xl font-bold text-secondary">About Us</h2>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Out Story</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Travel Blog & Tips</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Working with Us</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="./index.html#start">Be Our Partner</a>
-        </div>
-        <div data-aos="fade-right" data-aos-delay="600" class="h-full mt-30">
-          <h2 class="mb-5 text-xl font-bold text-secondary">Contact Info</h2>
-          <p class="mb-8 font-light">135  kampuchea krom ,Teuk Thla  Toul Kork ,Phnom Penh Cambodia</p>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="mailto:MaTrip12@gmail.com">
-            <i class="mr-3 fa-solid fa-envelope text-secondary"></i>MaTrip12@gmail.com</a>
-          <a class="block mt-2 font-light hover:font-bold hover:underline duration-800 "  href="tel:+85512345678">
-            <i class="mr-3 fa-solid fa-phone-volume text-secondary"></i>+855 12345678</a>
-        </div>
-      </div>
-      </section>
-      <div class="container flex items-center justify-between max-w-screen-xl mx-auto mt-5">
-        <p class="text-sm font-light">© Copyright 2025 by Matrip.com</p>
-        <div class="flex gap-3">
-          <img src="./assets/img/visa.png" alt="">
-          <img src="./assets/img/aba.png" alt="">
-          <img src="./assets/img/acleda.png" alt="">
-          <img src="./assets/img/paypal.png" alt="">
-        </div>
-      </div>
     </footer>
+
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const actionBtn = document.getElementById('user-action-button');
+    const isLoggedIn = localStorage.getItem('loggedIn') === 'true';
+
+    if (isLoggedIn && actionBtn) {
+      // Show user profile button
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-account.html" class="flex items-center space-x-2">
+          <img src="./assets/img/cholna-2.png" alt="User Profile" class="w-15 rounded-full border-2 border-primary shadow-md" />
+        </a>
+      `;
+    } else if (actionBtn) {
+      // Show login button
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-login.html">
+                    <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                      Log In
+                  </button>
+                  </a>
+      `;
+    }  
+  });
+
+  // Optional: helper function to handle logout on your main page if needed
+  function handleLogout() {
+    localStorage.removeItem('loggedIn');
+    // Refresh or update the button immediately after logout if you want
+    const actionBtn = document.getElementById('user-action-button');
+    if (actionBtn) {
+      actionBtn.innerHTML = `
+        <a href="./src/pages/user-login.html">
+                    <button class="bg-primary p-[0.8rem_1.2rem] rounded-lg text-white font-bold hover:bg-[#0653ad] transition duration-500 hover:duration-500 cursor-pointer">
+                      Log In
+                  </button>
+                  </a>
+      `;
+    }
+  }
+</script>
 
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -413,6 +466,8 @@
     });
   </script>
   <script src="./src/script/home-destination.js"></script>
+  <script src="./src/script/home-event.js"></script>
+  <script src="./src/script/home-tour.js"></script>
   <script src="./src/script/home-service.js"></script>
   <script src="./src/script/scroll-progress.js"></script>
   <script src="./src/script/toggle.js"></script>
