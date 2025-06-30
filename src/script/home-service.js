@@ -29,7 +29,7 @@ let cardServices = services.map(
     <div class="border-1 border-gray-300 w-70 h-95 rounded-2xl shadow-xl shadow-gray-300 cursor-pointer"
          data-aos="fade-up"
          data-aos-anchor-placement="top-center"
-         data-aos-delay="${100 + idx * 100}">
+         data-aos-delay="${30 + idx * 30}">
       <img 
       class="rounded-t-2xl"
       src="${data.image}">
